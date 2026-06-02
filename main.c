@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include "storage.c"
 #include "question.c"
+#include "storage.h"
 
 int main(){
 
