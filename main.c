@@ -28,7 +28,7 @@ int main(){
 
     switch( Snum ){
         case 1:
-            midasi("開始します");
+            midasi("======スタート======");
             card();
             goto START;
 
