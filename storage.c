@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void newword(char word[1000], char mean[1000]){
+void newword(char word[1024], char mean[1024]){
     FILE *fp = fopen("words.txt", "a");
 
     if( fp == NULL ){
