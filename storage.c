@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // 単語と意味をwords.txtに保存する関数
-void newword(char word[1000], char mean[1000]){
+void newword(char word[256], char mean[256]){
     // ファイルを開く
     FILE *fp = fopen("words.txt", "a");
 
