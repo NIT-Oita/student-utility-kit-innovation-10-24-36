@@ -3,9 +3,6 @@ CC = gcc
 CFLAGS = -Wall
 TARGET = main.exe
 
-# ソースファイルとオブジェクトファイル
-# main.c には storage.c と question.c がインクルードされているため、
-# コンパイル対象は main.c のみで動作するように書かれています
 SRCS = main.c
 OBJS = $(SRCS:.c=.o)
 
