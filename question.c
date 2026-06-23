@@ -26,8 +26,6 @@ void card(){
     rewind(fp);
 
     for( int i = 0; i < count; i++ ){
-        printf("                    count: %d\n", tCount + 1);
-
         if( fgets(buf, sizeof(buf), fp ) != NULL){
             if(sscanf( buf, "%s %s", word1, word2 ) == 2){
                 printf("%sの意味は？\n", word1);
@@ -43,6 +41,12 @@ void card(){
                     kaigyo(2);
                 }
                 Sleep( 500 );
+
+                if( i == count - 1 ){
+                    kaigyo(3);
+                    printf("正解数: %d", tCount);
+                    kaigyo(3);
+                }
             }
             else {
                     printf("ファイル作成ミスです.\n");
