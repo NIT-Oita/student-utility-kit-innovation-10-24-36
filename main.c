@@ -48,7 +48,8 @@ int main(){
 
         default:
             printf("指定のない値です\n");
-            break;
+            kaigyo(3);
+            goto START;
     }
     midasi("暗記フラッシュカード");
     kaigyo(3);
