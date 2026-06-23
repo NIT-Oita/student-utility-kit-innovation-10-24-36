@@ -41,7 +41,7 @@ int main(){
             goto START;
 
         case 3:
-            midasi("終了します");
+            midasi("=====終了します=====");
             kaigyo(3);
             midasi("暗記フラッシュカード");
             return 0;
